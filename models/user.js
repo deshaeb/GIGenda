@@ -19,16 +19,17 @@ const gigsSchema = new mongoose.Schema({
   },
   agenda: { 
     type: String, 
-    required: false},
+    required: false
+  },
   extraDeets: {
      type: String, 
-     required: false},
+     required: false
+  },
   privacy: {
     type: String,
     enum: ['private', 'public'],
     required: true
   }
-
 });
 
 const userSchema = new mongoose.Schema({

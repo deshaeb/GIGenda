@@ -21,10 +21,11 @@ router.post('/sign-up', async (req, res) => {
     // "remember" only the user's _id in the session object
     req.session.user = { _id: user._id };
     req.session.save();
+    res.redirect('/gigs');
   } catch (err) {
     console.log(err);
+    res.redirect('/');
   }
-  res.redirect('/');
 });
 
 // POST /auth/login (login user)
@@ -38,7 +39,7 @@ router.post('/login', async (req, res) => {
       req.session.user = { _id: user._id };
       req.session.save();
       // Perhaps update to some other functionality
-      return res.redirect('/');
+      return res.redirect('/gigs');
     } else {
       return res.redirect('/auth/login');
     }
