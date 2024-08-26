@@ -53,9 +53,9 @@ app.get('/', async (req, res) => {
 
 
 // Set the port from environment variable or default to 3000
-const port = process.env.PORT ? process.env.PORT : "3000";
+const port = process.env.PORT ? process.env.PORT : "3333";
 // An alternative to above
-// const port = process.env.PORT || "3000";
+// const port = process.env.PORT || "3333";
 
 app.listen(port, () => {
   console.log(`The express app is ready on port ${port}!`);
