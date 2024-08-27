@@ -12,4 +12,9 @@ router.get('/', (req, res) => {
   });
 });
 
+//GET /gigs/new (new functionality)
+router.get('/new', (req,res) => {
+  res.render('gigs/new.ejs')
+})
+
 module.exports = router;

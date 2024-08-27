@@ -1,0 +1,44 @@
+<%- include('../partials/header.ejs') %>
+
+<h1>Add New Gig</h1>
+
+<form action="" method="">
+  <!-- views/applications/new.ejs -->
+
+  <form action="/gigs" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name">
+    
+    <label for="venue">Venue:</label>
+    <input type="text" name="venue" id="venue">
+    
+    <label for="date">Date:</label>
+    <input type="text" name="date" id="date">
+
+    <label for="callTime">Call Time:</label>
+    <input type="text" name="callTime" id="callTime">
+    
+    <label for="agenda">Agenda:</label>
+    <textarea name="agenda" id="agenda"></textarea>
+
+    <label for="extraDeets">Extra Deets:</label>
+    <textarea name="extraDeets" id="extraDeets"></textarea>
+    
+    <label for="privacy">Privacy:</label>
+    <select id="privacy" name="privacy">
+      <option value="private">Private</option>
+      <option value="public">Public</option>
+    </select>
+
+    <label for="status">Status:</label>
+    <select id="status" name="status">
+      <option value="upcoming">Upcoming</option>
+      <option value="previous">Previous</option>
+      <option value="pending" selected>Pending</option>
+    </select>
+    <button type="submit">ADD GIG</button>
+  </form>
+
+</form>
+
+<%- include('../partials/footer.ejs') %>

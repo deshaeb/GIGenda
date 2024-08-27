@@ -16,6 +16,8 @@
       <% if (user) { %>
         <span>Wecome, <%= user.username %></span>
         <a href="/gigs">MY GIGS</a>
+        <a href="/gigs/new">ADD NEW GIG</a>
+        <!-- <a href="/gigs">NEW GIG</a> -->
         <a href="/auth/logout">LOG OUT</a>&nbsp;&nbsp;
       <% } else { %>
         <a href="/auth/sign-up">SIGN UP</a>
