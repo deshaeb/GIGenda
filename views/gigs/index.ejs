@@ -2,6 +2,9 @@
 
 <h1>My Gigs</h1>
 <% if (user.gigs.length) { %>
+    <% user.gigs.forEach((gig) => { %>
+        <p><%= gig.name %></p>
+   <% }) %>
 
 <% } else { %>
     <h2>No current Gigs!</h2>

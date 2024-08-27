@@ -31,7 +31,7 @@ app.use(session({
 // Require the middleware that adds the user doc to the req & the res.locals objects
 const addUserToReqAndLocals = require('./middleware/addUserToReqAndLocals');
 // Be sure to mount after the session middleware above
-app.use(addUserToReqAndLocals);
+app.use(addUserToReqAndLocals, require('./middleware/addUserToReqAndLocals'));
 
 
 // Routes/Controllers

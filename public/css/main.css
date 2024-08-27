@@ -61,3 +61,7 @@ button:hover {
   background-color: lightslategray;
   color: white;
 }
+
+form > button[type="submit"] {
+  grid-column: 2;
+}

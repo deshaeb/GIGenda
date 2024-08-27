@@ -2,10 +2,11 @@
 
 <h1>Add New Gig</h1>
 
-<form action="" method="">
   <!-- views/applications/new.ejs -->
-
   <form action="/gigs" method="POST">
+    <label for="type">Type:</label>
+    <input type="text" name="type" id="type">
+    
     <label for="name">Name:</label>
     <input type="text" name="name" id="name">
     
@@ -39,6 +40,6 @@
     <button type="submit">ADD GIG</button>
   </form>
 
-</form>
+
 
 <%- include('../partials/footer.ejs') %>
