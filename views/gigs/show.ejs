@@ -7,7 +7,7 @@
       Date: <%= gig.date %> <br>
       Call Time: <%= gig.callTime %> <br>
       Privacy: <%= gig.privacy %> <br>
-      Status: <%= gig.status %> <br>
+      Current Status: <%= gig.status %> <br>
       Agenda: <%= gig.agenda %> <br>
       Extra Details: <%= gig.extraDeets %>
     </p>
@@ -15,5 +15,8 @@
 <form action="/gigs/<%= gig._id %>?_method=DELETE" method="POST">
   <button type="submit">␡</button>
 </form>
+<a href="/gigs/<%= gig._id %>/edit">Update Gig</a>
 
-        <%- include('../partials/footer.ejs') %>
+
+
+<%- include('../partials/footer.ejs') %>

@@ -25,12 +25,12 @@ const gigsSchema = new mongoose.Schema({
   extraDeets: String,
   privacy: {
     type: String,
-    enum: ['private', 'public'],
-    required: true
+    enum: ['Private', 'Public'],
+    required: false
   },
   status: {
     type: String,
-    enum: ['upcoming', 'previous', 'pending'],
+    enum: ['Upcoming', 'Previous', 'Pending'],
     required: true
   }
 });

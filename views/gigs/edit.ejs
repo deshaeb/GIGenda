@@ -1,0 +1,45 @@
+<%- include('../partials/header.ejs') %>
+
+<h1>Update Your Gig</h1>
+
+  <!-- views/applications/new.ejs -->
+  <form action="/gigs/<%= gig._id %>?_method=PUT" method="POST">
+    <label for="type">Type:</label>
+    <input type="text" name="type" id="type" value="<%= gig.type %>">
+    
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" value="<%= gig.name %>">
+    
+    <label for="venue">Venue:</label>
+    <input type="text" name="venue" id="venue" value="<%= gig.venue %>">
+    
+    <label for="date">Date:</label>
+    <input type="text" name="date" id="date" value="<%= gig.date %>">
+
+    <label for="callTime">Call Time:</label>
+    <input type="text" name="callTime" id="callTime" value="<%= gig.callTime %>">
+    
+    <label for="agenda">Agenda:</label>
+    <textarea name="agenda" id="agenda"><%= gig.agenda %></textarea>
+
+    <label for="extraDeets">Extra Deets:</label>
+    <textarea name="extraDeets" id="extraDeets"><%= gig.extraDeets %></textarea>
+    
+    <label for="Privacy">Privacy:</label>
+    <select id="Privacy" name="Privacy">
+      <option value="Private"<%= gig.privacy === 'Private' ? 'selected' : '' %>>Private</option>
+      <option value="Public"<%= gig.privacy === 'Public' ? 'selected' : '' %>>Public</option>
+    </select>
+
+    <label for="status">Status:</label>
+    <select id="status" name="status">
+      <option value="Upcoming"<%= gig.status === 'Upcoming' ? 'selected' : '' %>>Upcoming</option>
+      <option value="Previous"<%= gig.status === 'Previous' ? 'selected' : '' %>>Previous</option>
+      <option value="Pending" <%= gig.status === 'Pending' ? 'selected' : '' %>>Pending</option>
+    </select>
+    <button type="submit">Update</button>
+  </form>
+
+
+
+<%- include('../partials/footer.ejs') %>

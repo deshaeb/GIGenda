@@ -20,7 +20,13 @@ router.get('/new', (req,res) => {
 //GET /gigs/:gigId (show functionality/action)
 router.get('/:gigId', (req, res) => {
   const gig = req.user.gigs.id(req.params.gigId)
-  res.render('gigs/show.ejs', { gig })
+  res.render('gigs/show.ejs', { gig });
+});
+
+//GET /gigs/:gigId/edit (edit functionality/action)
+router.get('/:gigId/edit', (req, res) => {
+  const gig = req.user.gigs.id(req.params.gigId)
+  res.render('gigs/edit.ejs', { gig });
 });
 
 //POST /gigs (create functionality/ action)
@@ -39,6 +45,14 @@ router.delete('/:gigId', async (req, res) => {
   req.user.gigs.pull(req.params.gigId);
   await req.user.save();
   res.redirect('/gigs');
+});
+
+//PUT /gig/:gigId (update functionality/action)
+router.put('/:gigId', async (req, res) => {
+  const gig = req.user.gigs.id(req.params.gigId);
+  gig.set(req.body);
+  await req.user.save();
+  res.redirect(`/gigs/${gig._id}`);
 });
 
 module.exports = router;
