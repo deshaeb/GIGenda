@@ -17,6 +17,12 @@ router.get('/new', (req,res) => {
   res.render('gigs/new.ejs')
 });
 
+//GET /gigs/:gigId (show functionality/action)
+router.get('/:gigId', (req, res) => {
+  const gig = req.user.gigs.id(req.params.gigId)
+  res.render('gigs/show.ejs', { gig })
+});
+
 //POST /gigs (create functionality/ action)
 router.post('/', async (req, res) => {
   try {

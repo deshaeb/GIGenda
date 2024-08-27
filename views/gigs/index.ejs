@@ -2,10 +2,14 @@
 
 <h1>My Gigs</h1>
 <% if (user.gigs.length) { %>
-    <% user.gigs.forEach((gig) => { %>
-        <p><%= gig.name %></p>
-   <% }) %>
-
+     <ul>
+         <% user.gigs.forEach((gig)=> { %>
+            <p><a href="/gigs/<%= gig._id %>">
+              Name: <%= gig.name %> <br>
+              Status:  <%= gig.status %> <br>
+            </a></p>
+            <% }) %>
+    </ul>
 <% } else { %>
     <h2>No current Gigs!</h2>
 <% } %>
