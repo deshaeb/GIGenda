@@ -1,10 +1,6 @@
 <%- include('../partials/header.ejs') %>
 
-  <h1>
-    <%= gig.name %>
-  </h1>
-
-  
+  <h1><%= gig.name %></h1>
     <p>
       Type: <%= gig.type %> <br>
       Venue: <%= gig.venue %> <br>
@@ -16,6 +12,8 @@
       Extra Details: <%= gig.extraDeets %>
     </p>
       
-
+<form action="/gigs/<%= gig._id %>?_method=DELETE" method="POST">
+  <button type="submit">␡</button>
+</form>
 
         <%- include('../partials/footer.ejs') %>

@@ -5,9 +5,9 @@
      <ul>
          <% user.gigs.forEach((gig)=> { %>
             <p><a href="/gigs/<%= gig._id %>">
-              Name: <%= gig.name %> <br>
+              <%= gig.name %> <br></a>
               Status:  <%= gig.status %> <br>
-            </a></p>
+            </p>
             <% }) %>
     </ul>
 <% } else { %>

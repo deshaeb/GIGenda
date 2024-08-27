@@ -34,4 +34,11 @@ router.post('/', async (req, res) => {
   res.redirect('/gigs');
 });
 
+//DELETE /gigs/:gigId (delete functionality/action)
+router.delete('/:gigId', async (req, res) => {
+  req.user.gigs.pull(req.params.gigId);
+  await req.user.save();
+  res.redirect('/gigs');
+});
+
 module.exports = router;
