@@ -1,17 +1,22 @@
 <%- include('../partials/header.ejs') %>
 
+<div id="newForm">
+    <img id="newFormBkg" src="/images/logo.jpeg" alt="newShowBkg">
 <h1>My Gigs</h1>
 <% if (user.gigs.length) { %>
      <ul>
          <% user.gigs.forEach((gig)=> { %>
-            <p><a href="/gigs/<%= gig._id %>">
-              <%= gig.name %> <br></a>
-              Status:  <%= gig.status %> <br>
-            </p>
+            <a href="/gigs/<%= gig._id %>">
+                <button id="form">
+                    <%= gig.name %> <br></a>
+                    Status:  <%= gig.status %> <br>
+                </button>
+                
             <% }) %>
     </ul>
 <% } else { %>
     <h2>No current Gigs!</h2>
 <% } %>
+</div>
 
 <%- include('../partials/footer.ejs') %>

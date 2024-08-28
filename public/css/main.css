@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(235, 233, 235)
 }
 
 body {
@@ -10,8 +11,14 @@ body {
   grid-template-rows: 8vh 1fr 4vh;
 }
 
-nav, footer {
-  background-color:black;
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav,
+footer {
+  background-color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,6 +33,7 @@ nav a {
   background-color: white;
   padding: 1vmin;
   border-radius: 1vmin;
+
   &:hover {
     color: gray;
     background-color: lightslategray;
@@ -42,13 +50,22 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 5vmin;
+  /* margin-top: 5vmin; */
 }
 
 form {
   display: grid;
   grid-template-columns: auto auto;
   gap: 2vmin;
+  background-color: transparent;
+  border-radius: 30px;
+  border: 3px solid black;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+form label {
+  background-color: transparent;
 }
 
 form * {
@@ -62,28 +79,66 @@ button:hover {
   color: white;
 }
 
-form > button[type="submit"] {
+form>button[type="submit"] {
   grid-column: 2;
 
 }
 
-  #form {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 2vmin;
-  }
+#form {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2vmin;
+  border-radius: 30px;
+  border: 3px solid black;
+  padding: 15px;
+  margin-bottom: 15px;
+}
 
-  #form * {
-    font-size: 2vmin;
-    padding: 1vmin;
-    border-radius: 1vmin;
-  }
-  
-  /* #deleteBtn {
-    width: 30px;
-  } */
+#form * {
+  font-size: 2vmin;
+  padding: 1vmin;
+  border-radius: 1vmin;
+}
 
-  #buttonHolder {
-    display: flex;
-    flex-direction: row;
-  }
+#form form {
+  border: none;
+}
+
+#buttonHolder {
+  display: flex;
+  flex-direction: row;
+}
+
+#coverPhoto {
+  margin-top: -50px;
+  width: 95vw;
+  height: auto;
+}
+
+#newForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  /* background-image: url('/images/newShow.png'); */
+  background-size: cover;
+  background-position: center;
+}
+
+;
+
+#newForm img {
+  margin-top: -50px;
+  width: 100vw;
+};
+
+.openGig {
+  font-size: 2vmin;
+  padding: 1vmin;
+  border-radius: 1vmin;
+  padding: 4px;
+  text-decoration: none;
+  width: 150px;
+}
