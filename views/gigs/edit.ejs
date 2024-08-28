@@ -20,8 +20,8 @@
     <input type="text" name="callTime" id="callTime" value="<%= gig.callTime %>">
     
     <label for="agenda">Agenda:</label>
-    <textarea name="agenda" id="agenda"><%= gig.agenda %></textarea>
-
+    <textarea name="agenda" id="agenda"><%= gig.agenda %></textarea>    
+     
     <label for="extraDeets">Extra Deets:</label>
     <textarea name="extraDeets" id="extraDeets"><%= gig.extraDeets %></textarea>
     
@@ -30,7 +30,7 @@
       <option value="Private"<%= gig.privacy === 'Private' ? 'selected' : '' %>>Private</option>
       <option value="Public"<%= gig.privacy === 'Public' ? 'selected' : '' %>>Public</option>
     </select>
-
+    
     <label for="status">Status:</label>
     <select id="status" name="status">
       <option value="Upcoming"<%= gig.status === 'Upcoming' ? 'selected' : '' %>>Upcoming</option>
@@ -40,6 +40,6 @@
     <button type="submit">Update</button>
   </form>
 
-
+  <script></script>
 
 <%- include('../partials/footer.ejs') %>

@@ -32,6 +32,9 @@ router.get('/:gigId/edit', (req, res) => {
 //POST /gigs (create functionality/ action)
 router.post('/', async (req, res) => {
   try {
+    console.log(req.body.agenda)
+    // const agenItems = req.body.agenda.split('\n');
+    // req.body.agenda = agenItems
     req.user.gigs.push(req.body);
     await req.user.save();
   } catch (err) {
