@@ -64,4 +64,26 @@ button:hover {
 
 form > button[type="submit"] {
   grid-column: 2;
+
 }
+
+  #form {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2vmin;
+  }
+
+  #form * {
+    font-size: 2vmin;
+    padding: 1vmin;
+    border-radius: 1vmin;
+  }
+  
+  /* #deleteBtn {
+    width: 30px;
+  } */
+
+  #buttonHolder {
+    display: flex;
+    flex-direction: row;
+  }
