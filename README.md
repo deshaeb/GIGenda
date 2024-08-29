@@ -1,32 +1,38 @@
 # GIGENDA
-Concentration: DETROIT CITY EDITION is a unique rendition of the classic memory game called 'Concentration'! In this version, the user has the liberty of exploring the beautiful attractions that Detroit City has to offer through the game's images! Select two tiles in hopes of finding the perfect match! In this 16-tile board game, collecting a total of eight matches grants you a win! However, a total of 8 wrong guesses willl result in a hard loss. By clicking 'Shuffle', you are able to reset the board and try again! Click 'Play!' to begin! 
-# Screenshot
-
-![LgE1TQZ - Imgur](https://github.com/user-attachments/assets/87860346-471d-4d86-b941-cde9777a0752)
-
-![XypUGlR - Imgur](https://github.com/user-attachments/assets/619dcdc2-ccd4-4a81-a052-349d48c5c7a2)
+<img src="https://imgur.com/KfNBfvt" ><br>
+<a href="https://gigenda-d14215ea7409.herokuapp.com/">GIGENDA</a> is a powerful app designed for freelancers, performers, and service providers who need to keep track of their gigs. Whether you’re a photographer, caterer, DJ, or model, GIGENDA helps you manage every detail of your gigs, from the event’s name and venue to the tasks you need to complete before the big day.
 
 
 # Technologies Used
 
-- JavaScript
+- EJS
 - HTML
 - CSS
+- MongoDB
+- <a href="https://trello.com/b/JVaXIhCW/project-2-gigenda">Trello</a> 
 
-# Get Started
-Concentration: DETROIT CITY EDITION
-Instructions:<br>
-        After clicking 'Play!' to begin, <br>
-        Select 2 tiles per turn! <br>
-        Collect 8 matches to win! <br>
-        8 wrong picks = GAME OVER! <br>
-        Click 'Shuffle' to restart the game. <br>
-        Good Luck!
-https://gigenda-d14215ea7409.herokuapp.com/
 
-# Next Steps
+# Features
+•	Create Gigs: Easily create new gigs by entering essential details like the gig’s name, date, time, venue, and type. <br>
+•	Gig Agenda: Add a personalized to-do list for each gig to ensure you’re fully prepared. Track all your prep work and stay organized.<br>
+•	View Gigs: Access a clean and intuitive overview of all your upcoming and past gigs, sorted by date.<br>
+•       Update Gigs: Modify any details of your gigs as plans change, whether it’s updating the venue, changing the time, or adding new prep tasks.•	Delete Gigs: Remove gigs that are no longer relevant, keeping your schedule clutter-free.
+
+
+# How It Works
+
+• Create a Gig: Start by entering the gig’s name, date, time, venue, and type of event.<br>
+• Add to Your Agenda: Include a list of things you need to do to prepare for your gig. From picking up supplies to confirming with the client, track every step.<br>
+• Manage Your Gigs: Use the app to view, update, or delete your gigs as your schedule changes.<br>
+
+# Why GIGENDA?
+
+• Organized: Keep all your gig details in one place, and never miss an important deadline or task.<br>
+• Customizable: Tailor your gig agenda to suit your needs, with a flexible system for adding and managing tasks.<br>
+• User-Friendly: With an intuitive interface, GIGENDA makes gig management simple and stress-free.
+# Icebox Features
 
 Future enhancements include:
-1. An effect that causes the two selcted tiles to shake in the case that they are incorrect matches.
-2. Adding an 'i' icon that allows the user/player to click if insructions are needed.
-3. Adding a hint button that allows the user two free hints maximum, after they have already selected the first tile.
+• A feaure that allows users to post gigs that are for hire.
+• An update feature that allows a user to track and update hired and for-hire gigs!
+
