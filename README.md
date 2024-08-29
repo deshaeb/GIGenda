@@ -34,7 +34,7 @@
 • User-Friendly: With an intuitive interface, GIGENDA makes gig management simple and stress-free.
 # Icebox Features
 
-Future enhancements include:
-• A feaure that allows users to post gigs that are for hire.
+Future enhancements include: <br>
+• A feaure that allows users to post gigs that are for hire. <br>
 • An update feature that allows a user to track and update hired and for-hire gigs!
 
