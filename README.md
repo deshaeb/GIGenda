@@ -7,18 +7,16 @@
 
 # Technologies Used
 
-- EJS
-- HTML
-- CSS
-- MongoDB
-- <a href="https://trello.com/b/JVaXIhCW/project-2-gigenda">Trello</a> 
+- Frontend: HTML, CSS, EJS
+- Backend: Node.js, Express.js, MongoDB, Mongoose
+- Development: <a href="https://trello.com/b/JVaXIhCW/project-2-gigenda">Trello</a>, Draw.io, Visual Studio Code, Canva
 
 
 # Features
 •	Create Gigs: Easily create new gigs by entering essential details like the gig’s name, date, time, venue, and type. <br>
 •	Gig Agenda: Add a personalized to-do list for each gig to ensure you’re fully prepared. Track all your prep work and stay organized.<br>
 •	View Gigs: Access a clean and intuitive overview of all your upcoming and past gigs, sorted by date.<br>
-•       Update Gigs: Modify any details of your gigs as plans change, whether it’s updating the venue, changing the time, or adding new prep tasks.•	Delete Gigs: Remove gigs that are no longer relevant, keeping your schedule clutter-free.
+• Update Gigs: Modify any details of your gigs as plans change, whether it’s updating the venue, changing the time, or adding new prep tasks.•	Delete Gigs: Remove gigs that are no longer relevant, keeping your schedule clutter-free.
 
 
 # How It Works
