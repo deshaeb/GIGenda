@@ -15,7 +15,7 @@ const gigsSchema = new mongoose.Schema({
   },
   date: { 
     type: String, 
-    required: true      //Calendar pop up feature
+    required: true      
   },
   callTime: { 
     type: String, 
@@ -26,7 +26,7 @@ const gigsSchema = new mongoose.Schema({
   privacy: {
     type: String,
     enum: ['Private', 'Public'],
-    required: false
+    required: true
   },
   status: {
     type: String,

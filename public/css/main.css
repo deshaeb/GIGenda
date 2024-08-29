@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(235, 233, 235)
+  /* background-color: rgb(235, 233, 235) */
 }
 
 body {
@@ -9,6 +9,7 @@ body {
   height: 100vh;
   display: grid;
   grid-template-rows: 8vh 1fr 4vh;
+  background-color: rgb(235, 233, 235)
 }
 
 a {
@@ -41,16 +42,11 @@ nav a {
   }
 }
 
-nav span {
-  font-size: 1.5vmin;
-  color: lightslategray;
-}
-
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin-top: 5vmin; */
+  margin-top: 5vmin;
 }
 
 form {
@@ -110,8 +106,8 @@ form>button[type="submit"] {
 }
 
 #coverPhoto {
-  margin-top: -50px;
-  width: 95vw;
+  margin-top: 0px;
+  width: 100vw;
   height: auto;
 }
 
@@ -122,17 +118,20 @@ form>button[type="submit"] {
   justify-items: center;
   align-items: center;
   text-align: center;
-  /* background-image: url('/images/newShow.png'); */
   background-size: cover;
   background-position: center;
-}
+  width: 100%;
 
-;
+  #newFormBkg {
+    width: 100vw;
+  }
+};
 
 #newForm img {
   margin-top: -50px;
   width: 100vw;
 };
+
 
 .openGig {
   font-size: 2vmin;
@@ -141,4 +140,17 @@ form>button[type="submit"] {
   padding: 4px;
   text-decoration: none;
   width: 150px;
+};
+
+.gigSelect {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 500px;
+};
+
+.showForm input,
+.showForm textarea,
+.showForm select:focus {
+  outline: none;
 }
