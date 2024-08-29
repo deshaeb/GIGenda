@@ -125,12 +125,12 @@ form>button[type="submit"] {
   #newFormBkg {
     width: 100vw;
   }
-};
+}
 
 #newForm img {
   margin-top: -50px;
   width: 100vw;
-};
+}
 
 
 .openGig {
@@ -140,14 +140,14 @@ form>button[type="submit"] {
   padding: 4px;
   text-decoration: none;
   width: 150px;
-};
+}
 
 .gigSelect {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 500px;
-};
+}
 
 .showForm input,
 .showForm textarea,

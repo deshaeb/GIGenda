@@ -3,7 +3,6 @@ const router = express.Router();
 const User = require('../models/user');
 const bcrypt = require('bcrypt')
 
-// All paths start with "/auth"
 
 // GET /auth/sign-up (show sign-up form)
 router.get('/sign-up', (req, res) => {
@@ -18,7 +17,6 @@ router.post('/sign-up', async (req, res) => {
     }
     req.body.password = bcrypt.hashSync(req.body.password, 6);
     const user = await User.create(req.body);
-    // "remember" only the user's _id in the session object
     req.session.user = { _id: user._id };
     req.session.save();
     res.redirect('/gigs');
@@ -38,7 +36,6 @@ router.post('/login', async (req, res) => {
     if (bcrypt.compareSync(req.body.password, user.password)) {
       req.session.user = { _id: user._id };
       req.session.save();
-      // Perhaps update to some other functionality
       return res.redirect('/gigs');
     } else {
       return res.redirect('/auth/login');

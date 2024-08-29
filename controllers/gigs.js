@@ -3,7 +3,6 @@ const router = express.Router();
 const User = require('../models/user')
 //const ensureLoggedIn = require('../middleware/ensureLoggedIn');
 
-// All paths start with "/gigs"
 
 // GET /gigs (index functionality/ action)
 router.get('/', (req, res) => {
@@ -13,7 +12,7 @@ router.get('/', (req, res) => {
 });
 
 //GET /gigs/new (new functionality)
-router.get('/new', (req,res) => {
+router.get('/new', (req, res) => {
   res.render('gigs/new.ejs')
 });
 
@@ -33,8 +32,6 @@ router.get('/:gigId/edit', (req, res) => {
 router.post('/', async (req, res) => {
   try {
     console.log(req.body.agenda)
-    // const agenItems = req.body.agenda.split('\n');
-    // req.body.agenda = agenItems
     req.user.gigs.push(req.body);
     await req.user.save();
   } catch (err) {

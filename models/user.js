@@ -2,23 +2,23 @@ const mongoose = require("mongoose");
 
 const gigsSchema = new mongoose.Schema({
   type: {
-    type: String, 
+    type: String,
     required: true
   },
-  name: { 
-    type: String, 
+  name: {
+    type: String,
     required: true
   },
-  venue: { 
-    type: String, 
+  venue: {
+    type: String,
     required: true
   },
-  date: { 
-    type: String, 
-    required: true      
+  date: {
+    type: String,
+    required: true
   },
-  callTime: { 
-    type: String, 
+  callTime: {
+    type: String,
     required: true
   },
   agenda: String,
