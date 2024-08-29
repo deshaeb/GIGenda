@@ -1,7 +1,9 @@
 # GIGENDA
-<img src="https://imgur.com/KfNBfvt" ><br>
-<a href="https://gigenda-d14215ea7409.herokuapp.com/">GIGENDA</a> is a powerful app designed for freelancers, performers, and service providers who need to keep track of their gigs. Whether you’re a photographer, caterer, DJ, or model, GIGENDA helps you manage every detail of your gigs, from the event’s name and venue to the tasks you need to complete before the big day.
 
+<br>
+<a href="https://gigenda-d14215ea7409.herokuapp.com/">GIGENDA</a> is a powerful app designed for freelancers, performers, and service providers who need to keep track of their gigs. Whether you’re a photographer, caterer, DJ, or model, GIGENDA helps you manage every detail of your gigs, from the event’s name and venue to the tasks you need to complete before the big day. <br> <br>
+
+![2F43A0A7-68C5-4A33-B0F7-FE213CDD5D38](https://github.com/user-attachments/assets/b36fc296-7731-46dc-ba3b-f305b8faf869)
 
 # Technologies Used
 
